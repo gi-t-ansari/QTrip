@@ -73,11 +73,16 @@ footer {
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
+    url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/hero.jpg");
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
+  height: 60vh;
   /* 2. Position and center the image to scale nicely on all screens. */
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
 }
 
 .hero-subheading {
@@ -142,4 +147,41 @@ footer {
     width: 400px;
     position: fixed;
   }
+}  
+
+#bengaluru{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/bengaluru.jpg");
+}
+#kolkata{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/kolkata.jpg");
+}
+#goa{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/goa.jpg");
+}
+#mumbai{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/mumbai.jpg");
+}
+#singapore{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/singapore.jpg");
+}
+#dubai{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/dubai.jpg");
+}
+#malaysia{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/malaysia.jpg");
+}
+#paris{
+  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/paris.jpg");
+  
+}
+.city{
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  width: 16rem;
+  height: 24rem;
 }

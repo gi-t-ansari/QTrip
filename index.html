@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QTrip</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/css/styles.css" />
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
-
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
 </head>
 
 <body>
@@ -17,28 +20,91 @@
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
-
-   <nav></nav> 
+  
+  <nav class="navbar navbar-light navbar-expand-sm">
+    <div class="container-fluid w-100">
+      <a href="#"><h2>QTrip</h2></a>
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarItems"
+        type="button"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse justify-content-end"
+        id="navbarItems"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/adventures/index.html" class="nav-link">
+              Explore
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex"></div> 
-
-
+   <div class="hero-image d-flex flex-column justify-content-center">
+      <div class="container">
+        <h2>Welcome to QTrip</h2>
+        <h3 class="hero-subheading">Explore the world with fantatstic places to venture around</h3>
+        <input class="hero-input" type="text" placeholder="Search a city">
+      </div>
+   </div>
+    
   <div class="container">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
+    <div class="row">
+      <div class="col mt-4">
+        <div class="city" id="bengaluru">Bengaluru<br>100+ places</div> 
+      </div>
+      <div class="col mt-4">
+        <div class="city" id="kolkata">Kolkata<br>52+ places</div>
+      </div>
+      <div class="col mt-4">
+        <div class="city" id="goa">Goa<br>160+ places</div>
+      </div>
+      <div class="col mt-4">
+        <div class="city" id="mumbai">Mumbai<br>121+ places</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col mt-4">
+        <div class="city" id="singapore">Singapore<br>89+ places</div>
+      </div>
+      <div class="col mt-4">
+        <div class="city" id="dubai">Dubai<br>174+ places</div>
+      </div>
+      <div class="col mt-4">
+        <div class="city" id="malaysia">Malaysia<br>172+ places</div>
+      </div>
+      <div class="col mt-4">
+        <div class="city" id="paris">Paris<br>150+ places</div>
+      </div>
+    </div>
   </div>
 
   <footer>
-    <div class="container">© QTrip 2020</div>
+    <div class="container">© QTrip 2023</div>
   </footer>
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   
 </body>
 
