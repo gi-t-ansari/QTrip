@@ -51,23 +51,40 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  position: relative;
+  text-align:center;
+  /* height: 6rem; */
+  height: 100%;
+  overflow: hidden;
+  
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  transition: transform 0.2s;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  
+  
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  transform: scale(1.1);
+  filter: brightness(80%);
+  cursor: pointer;
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
 /* Think about how those in relation to the existing "tile" classes. */
 .tile-text {
-  position: absolute;
+  position: relative;
+  bottom: 4rem;
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
 }
 
 .hero-image {
@@ -108,14 +125,26 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  overflow: hidden;
+ 
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(80%);
+  cursor: pointer;
+}
+.text{
+  height: 20%;
 }
 
 /* ================================== */
@@ -149,39 +178,5 @@ footer {
   }
 }  
 
-#bengaluru{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/bengaluru.jpg");
-}
-#kolkata{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/kolkata.jpg");
-}
-#goa{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/goa.jpg");
-}
-#mumbai{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/mumbai.jpg");
-}
-#singapore{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/singapore.jpg");
-}
-#dubai{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/dubai.jpg");
-}
-#malaysia{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/malaysia.jpg");
-}
-#paris{
-  background-image: url("/workspace/tanzeelshamsh-in-ME_QTRIPSTATIC/assets/paris.jpg");
-  
-}
-.city{
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: 8px;
-  width: 16rem;
-  height: 24rem;
-}
+
+

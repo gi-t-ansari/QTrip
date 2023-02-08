@@ -9,10 +9,8 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -68,32 +66,59 @@
   <div class="container">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
-    <div class="row">
-      <div class="col mt-4">
-        <div class="city" id="bengaluru">Bengaluru<br>100+ places</div> 
+    <div class="row mt-4">
+      <div class=" col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <a href="./pages/adventures/index.html">
+            <img src="./assets/bengaluru.jpg">
+            <div class="tile-text">Bengaluru <br> 100+ places
+            </div>
+          </a> 
+        </div>
       </div>
-      <div class="col mt-4">
-        <div class="city" id="kolkata">Kolkata<br>52+ places</div>
+      <div class="col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <img src="./assets/kolkata.jpg">
+            <div class="tile-text">Kolkata<br>52+ places</div>
+        </div>
       </div>
-      <div class="col mt-4">
-        <div class="city" id="goa">Goa<br>160+ places</div>
+      <div class="col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <img src="./assets/goa.jpg">
+            <div class="tile-text">Goa<br>160+ places</div>
+        </div>
       </div>
-      <div class="col mt-4">
-        <div class="city" id="mumbai">Mumbai<br>121+ places</div>
+      <div class="col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <img src="./assets/mumbai.jpg">
+            <div class="tile-text">mumbai<br>121+ places</div>
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col mt-4">
-        <div class="city" id="singapore">Singapore<br>89+ places</div>
+      <div class="col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <img src="./assets/singapore.jpg">
+            <div class="tile-text">singapore<br>89+ places</div>
+        </div>
       </div>
-      <div class="col mt-4">
-        <div class="city" id="dubai">Dubai<br>174+ places</div>
+      <div class="col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <img src="./assets/dubai.jpg">
+            <div class="tile-text">dubai<br>74+ places</div>
+        </div>
       </div>
-      <div class="col mt-4">
-        <div class="city" id="malaysia">Malaysia<br>172+ places</div>
+      <div class="col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <img src="./assets/malaysia.jpg">
+            <div class="tile-text">malaysia<br>172+ places</div>
+        </div>
       </div>
-      <div class="col mt-4">
-        <div class="city" id="paris">Paris<br>150+ places</div>
+      <div class="col-12 col-lg-3 col-sm-6 mb-4">
+        <div class="tile rounded">
+          <img src="./assets/paris.jpg">
+            <div class="tile-text">paris<br>150+ places</div>
+        </div>
       </div>
     </div>
   </div>
@@ -104,7 +129,11 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
   
 </body>
 
