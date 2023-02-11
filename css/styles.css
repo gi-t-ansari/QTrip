@@ -22,13 +22,10 @@ a {
 footer {
   background: #f1f1f1;
   width: 100%;
-  padding: 16px 0px;
+  padding: 16px;
   color: #999;
   vertical-align: bottom;
   margin-top: 40px;
-  text-align: center;
-  /* width: 100%; */
-  /* height: 2.5rem;   */
 }
 
 .banner {
@@ -134,8 +131,9 @@ footer {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
   width: 100%;
-  height: auto;
+  height: 20em;
   object-fit: cover;
+  
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
@@ -160,10 +158,16 @@ footer {
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  padding: 8px 0;
+  /* object-fit: cover; */  
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter: brightness(80%);
+  cursor: pointer;
+
 }
 .experience-content ul li {
   margin-left: 16px;
@@ -177,6 +181,30 @@ footer {
     position: fixed;
   }
 }  
-
-
-
+strong{
+  color: #fb923c;
+  font-weight: 300;
+}
+@media (min-width: 992px){
+  #fixing{
+    position: fixed;
+    width: 28%;
+    border: 1px solid #d1d5db;
+  }
+}
+@media (max-width: 768px){
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#resort1{
+  border: 1px solid #d1d5db;
+}
+@media (max-width: 991px){
+  #sold-out{
+    border: 1px solid #d1d5db;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+  }
+}
